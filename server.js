@@ -25,6 +25,13 @@ mongoose.connection.once('open', function() {
     console.log("Successfully connected to the database");
 });
 
+//enable cors 
+app.use(function (req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    next();
+});
+
 //main Root
 app.get('/', function (req, res) {
     res.json({"message": "Welcome to Al Mundo REST API."});
