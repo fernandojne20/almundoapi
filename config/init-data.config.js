@@ -1,5 +1,5 @@
 module.exports = {
-  assetUrl: 'http://localhost:3000/assets/img/',
+  assetUrl: 'https://almundoapi.herokuapp.com/assets/img/',
   data: [
     {
       "id": "249942",
