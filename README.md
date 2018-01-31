@@ -32,24 +32,24 @@ por defecto el server apunta a la siguiente URL `http://localhost:3000/`.
 ```
 
 ## operaciones CRUD
-Endpoint para Obtener listado de hoteles
-`GET /hotels`
+Endpoint para Obtener listado de hoteles  
+`GET /hotels`  
 
-El siguiente ejemplo permite filtrar la información de los hoteles, buscando el nombre `Hotel Santa Cruz` y que sean de `3` y `1` estrellas: 
-`GET /hotel?name=Hotel Santa Cruz&stars=3&stars=1`
+El siguiente ejemplo permite filtrar la información de los hoteles, buscando el nombre `Hotel Santa Cruz` y que sean de `3` y `1` estrellas:  
+`GET /hotel?name=Hotel Santa Cruz&stars=3&stars=1`  
 
-Endpoint para obtener un hotel por id
-`GET /hotels/:hotelId`
+Endpoint para obtener un hotel por id  
+`GET /hotels/:hotelId`  
 
-Endpoint para guardar un nuevo hotel
-`POST /hotels` . Se debe enviar como Json el objeto `Hotel` a guardar.
+Endpoint para guardar un nuevo hotel  
+`POST /hotels` . Se debe enviar como Json el objeto `Hotel` a guardar.  
 
-Endpoint que permite actualizar un Hotel específico pasandole el id por la url y el objecto `Hotel` con la información a actualizar
-`UPDATE /hotels/:hotelId`
+Endpoint que permite actualizar un Hotel específico pasandole el id por la url y el objecto `Hotel` con la información a actualizar  
+`UPDATE /hotels/:hotelId`  
 
-Endpoint que permite eliminar un `Hotel` por su `id`
-`DELETE /hotels/:hotelId`
+Endpoint que permite eliminar un `Hotel` por su `id`  
+`DELETE /hotels/:hotelId`  
   
 ## Inicializar dummy data
-Endpoint que permite inicializar la base de datos con la información dummy proporcionada en el archivo `data.json`
-`POST /hotels/dummy`
+Endpoint que permite inicializar la base de datos con la información dummy proporcionada en el archivo `data.json`  
+`POST /hotels/dummy`  
