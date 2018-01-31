@@ -111,7 +111,7 @@ function setImagesUrl(hotels) {
     hotels.forEach(function (hotel) {
         hotel.image = initData.assetUrl + 'hotels/' + hotel.image;
         hotel.amenities.forEach(function (amenitie, index) {
-            hotel.amenities[index] = initData.assetUrl + 'amenities/' + amenitie + '.png';
+            hotel.amenities[index] = initData.assetUrl + 'amenities/' + amenitie + '.svg';
         });
     });
 
