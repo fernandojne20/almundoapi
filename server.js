@@ -37,6 +37,6 @@ app.use('/assets', express.static(__dirname + '/assets'));
 require('./app/routes/hotel.routes.js')(app);
 
 //listen for requests
-app.listen(3000, function () {
+app.listen(process.env.PORT || 3000, function () {
     console.log("server is listening on port 3000");
 })
